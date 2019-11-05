@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="card">
+    <h2 style="text-align: center">
+        <b>Job Description</b>
+    </h2>
+    <hr>
+    <div class="container">
+        <h4>
+            <b>Title: </b>Android, iOS, OpenCV
+        </h4>
+        <h4>
+            <b>No of Position: </b>3
+        </h4>
+        <h4>
+            <b>Description: </b> 3 years of experience in mobile application development using Android, iOS, Ionic
+        </h4>
+    </div>
+</div>
+
+
+
+<div style="text-align: center; margin-top: 10%; ">
+    <label for="file-input" class="select-image">
+        <a class="btn">Upload Resume</a>
+        <input id="file-input" type="file" (change)="uploadFile($event.target.files)" accept="image/*" />
+        <br>{{fileName}}
+    </label>
+    <br>
+    <button type="button" style="background: linear-gradient(135deg, #172a74, #21a9af);
+    background-color: #184e8e; color: white">Submit</button>
+</div>
+
+<app-footer></app-footer>
